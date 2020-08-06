@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <script src="https://unpkg.com/world-map/dist/world-map.min.js"></script>
+  <script type="text/javascript">
+    function load() 
+    {
+      WorldMap("world-map", 
+      {
+        width: 960,
+        height: 547,
+        landsColor: '#008282',
+        zoom: true,
+        hideAntarctic: false
+      });
+    }
+  </script>
+</head>
+<body onload="load()">
+  <div id="world-map"></div> 
+</body>
+</html>
