@@ -41,7 +41,7 @@ fi
 #docker run -i -t --rm fedora /bin/bash
 
 # DAEMON CONTAINER
-#docker run --name daemon -d ubuntu /bin/sh -c "while true; do echo $(date); sleep 1; done"
+#docker run --name daemon -d ubuntu /bin/sh -c "while true > /dev/null; do echo $(date); sleep 1; done"
 # CHECK DAEMON CONTAINER
 #docker logs -f daemon
 # STOP DAEMON CONTAINER
